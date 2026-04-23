@@ -14,4 +14,4 @@ One line per link, with a brief note about what to focus on:
 
 ## Links
 
-<!-- Add your links below -->
+- https://seed.com/ — **primary navbar reference**; love the hover-reveal dropdown under "Shop" that displays product thumbnails + codes + names. See `seed-navbar.md` for full notes.
