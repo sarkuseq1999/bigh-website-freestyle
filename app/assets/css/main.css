@@ -1,1 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Geist:wght@300..700&family=Geist+Mono:wght@400..600&display=swap');
 @import "tailwindcss";
+
+/* ------------------------------------------------------------------
+   BiGH palette & typography.
+   Midnight base, amber-science accent, cream type — chosen to sit
+   naturally under the dark-glass AppNav while staying readable and
+   distinct from every other supplement brand's pastel-sage aesthetic.
+------------------------------------------------------------------ */
+
+@theme {
+  --color-midnight: #0a0f1a;
+  --color-midnight-soft: #12182a;
+  --color-ink-slate: #1a2134;
+  --color-cream: #f0e9d8;
+  --color-cream-soft: #e8dfc9;
+  --color-amber: #f5b85c;       /* warm amber — primary accent */
+  --color-amber-soft: #fbd28f;  /* soft amber — hover lift */
+  --color-ink-muted: #5d6b7f;
+  --color-ink-faint: #3a4256;
+  --color-danger: #ff8c9e;
+
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body: 'Geist', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-mono: 'Geist Mono', 'Courier New', ui-monospace, monospace;
+}
+
+html {
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: 'kern', 'liga', 'calt';
+}
+
+.font-display {
+  font-family: var(--font-display);
+  font-optical-sizing: auto;
+  letter-spacing: -0.02em;
+}
+
+.font-display-italic {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-optical-sizing: auto;
+  letter-spacing: -0.01em;
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+  letter-spacing: 0.02em;
+}
+
+::selection {
+  background: var(--color-amber);
+  color: var(--color-midnight);
+}
